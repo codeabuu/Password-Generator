@@ -9,12 +9,12 @@ for chars in range(97, 123):
 
 symbols = ["!","@","#","$","%","^","&","*","_"]
 
-password = random.sample(password, k=5)#sample password according to chars
+password = random.sample(password, k=5)#samples chars
 
-password += random.sample(symbols, k=3)#sample symbols
+password += random.sample(symbols, k=3)#samples symbols
 
 random.shuffle(password)#shuffles both chars and symbols
 
-password = "".join(password)#joins symbols with chars to generate password
+password = "".join(password)#joins symbols with chars to generate 8 char password
 
 print(password)
