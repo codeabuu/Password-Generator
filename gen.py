@@ -9,9 +9,9 @@ for chars in range(97, 123):
 
 symbols = ["!","@","#","$","%","^","&","*","_"]
 
-password = random.sample(password, 5)#sample password according to chars
+password = random.sample(password, k=5)#sample password according to chars
 
-password += random.sample(symbols, 3)#sample symbols
+password += random.sample(symbols, k=3)#sample symbols
 
 random.shuffle(password)#shuffles both chars and symbols
 
